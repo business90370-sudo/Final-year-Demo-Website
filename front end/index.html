@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>QuickLoan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <a href="index.html" class="logo">QuickLoan</a>
+  <nav>
+    <a href="offers.html">Offers</a>
+    <a href="about.html">About</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="faq.html">FAQ</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <span class="tag">GET UP TO $50,000</span>
+    <h1>Fast and Safe<br>Loans for You</h1>
+    <p>Our partners process requests in just 1 hour.</p>
+    <div class="buttons">
+      <a href="offers.html" class="btn blue">Current Offers</a>
+      <a href="howitworks.html" class="btn green">How it Works</a>
+    </div>
+  </div>
+
+  <div class="hero-login">
+  <div class="login-card">
+    <h2>Login</h2>
+    <p class="login-sub">Access your offers & applications</p>
+
+    <form id="loginForm">
+  <label>Email</label>
+  <input id="loginEmail" type="email" placeholder="you@example.com" required />
+
+  <label>Password</label>
+  <input id="loginPassword" type="password" placeholder="••••••••" required />
+
+  <button id="loginBtn" type="submit" class="btn blue login-btn">Login</button>
+
+  <div class="login-links">
+    <a href="forgot.html">Forgot password?</a>
+    <a href="register.html" id="createAccountBtn">Create account</a>
+  </div>
+</form>
+
+  </div>
+</div>
+
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="card">Get a Loan From Your Gadget</div>
+  <div class="card">Get Paid In Few Minutes</div>
+  <div class="card">Simple and Clear Terms</div>
+  <div class="card">Repay Automatically</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <h2>Contact Information</h2><br> 
+  <p><b>Feel free to contact us in any convenient way.<br>
+You can find different types of loans from our partners on the website.<br>
+You can apply for them online and get the decision in a couple of minutes.<br>
+If you have any questions, you can contact our support team.</b></p>
+
+<section class="contact-section">
+
+  <div class="contact-right">
+
+
+    <div class="contact-item">
+      <div class="icon-circle">📞</div>
+      <div>
+        <h3>Phone Number</h3>
+        <p>+91 1234567890</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="icon-circle">✉️</div>
+      <div>
+        <h3>Email</h3>
+        <p>quickloan@email.com</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="icon-circle">🏠</div>
+      <div>
+        <h3>Address</h3>
+        <p>Address 123,dbc road,abc street,london</p>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <div class="icon-circle">⏰</div>
+      <div>
+        <h3>Working Hours</h3>
+        <p>Monday - Saturday: 11 AM - 9 PM</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+</footer>
+
+<script src="script.js"></script>
+
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getFirestore, collection, addDoc, getDocs, query, where } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAlQPrS_9MRS0viI3jZQdN18RudB50ZBe0",
+  authDomain: "cyberscan-project-4b656.firebaseapp.com",
+  projectId: "cyberscan-project-4b656",
+  storageBucket: "cyberscan-project-4b656.firebasestorage.app",
+  messagingSenderId: "596607725636",
+  appId: "1:596607725636:web:45ca1eced3f086c1c88c11"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.db = db;
+window.firestore = { collection, addDoc, getDocs, query, where };
+</script>
+
+
+</body>
+</html>

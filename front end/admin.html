@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="register-wrap">
+    <div class="register-card" style="max-width:900px;">
+      <h1>Admin Panel</h1>
+      <p>All registered users</p>
+
+      <button id="logoutBtn" class="btn blue" type="button">Logout</button>
+
+      <div style="overflow:auto; margin-top:15px;">
+        <table id="usersTable" style="width:100%; border-collapse:collapse;">
+          <thead>
+            <tr>
+              <th style="text-align:left; padding:10px; border-bottom:1px solid #ddd;">ID</th>
+              <th style="text-align:left; padding:10px; border-bottom:1px solid #ddd;">Name</th>
+              <th style="text-align:left; padding:10px; border-bottom:1px solid #ddd;">Email</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <p id="adminMsg" style="margin-top:12px;"></p>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

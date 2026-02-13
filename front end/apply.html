@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply for Loan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">QuickLoan</a>
+  <nav>
+    <a href="offers.html">Offers</a>
+    <a href="index.html">Home</a>
+  </nav>
+</header>
+
+<div class="register-wrap">
+  <div class="register-card">
+    <h1>Loan Application</h1>
+    <p>Fill your details to apply.</p>
+
+    <form id="applyForm">
+      <input id="borrowerName" type="text" placeholder="Borrower Name" required />
+      <input id="loanType" type="text" placeholder="Loan Type" required />
+      <input id="loanAmount" type="number" placeholder="Loan Amount" required />
+      <input id="phone" type="text" placeholder="Phone Number" required />
+      <input id="address" type="text" placeholder="Address" required />
+
+      <button type="submit" class="btn blue">Submit Application</button>
+
+      
+    </form>
+
+    <p class="back-login">
+      <a href="offers.html">← Back to Offers</a>
+    </p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

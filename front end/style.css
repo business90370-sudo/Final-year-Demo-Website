@@ -1,0 +1,710 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #111;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: white;
+}
+
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 60px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 15px 0;
+}
+
+.tag {
+  color: #2f6bff;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.blue {
+  background: #2f6bff;
+  color: white;
+}
+
+.green {
+  background: #2ad48a;
+  color: white;
+}
+
+/* FEATURES */
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 60px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* OFFERS */
+.offers {
+  padding: 60px;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.offer {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.offer a {
+  color: #2ad48a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  background: #2a5ecb;
+  color: white;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+.about-page {
+  padding: 60px;
+}
+
+.about-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-box h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.about-card {
+  background: #f4f7fb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.about-card h3 {
+  margin-bottom: 8px;
+  color: #2f6bff;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #2f6bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 25px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-box h1 {
+    font-size: 28px;
+  }
+}
+.about-page {
+  padding: 60px;
+}
+
+.about-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-box h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.about-card {
+  background: #f4f7fb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.about-card h3 {
+  margin-bottom: 8px;
+  color: #2f6bff;
+}
+
+.back-btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #2f6bff;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 25px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 25px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-box h1 {
+    font-size: 28px;
+  }
+}
+.testimonials-page {
+  padding: 60px;
+  text-align: center;
+}
+
+.testimonials-page h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 30px auto;
+}
+
+.t-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: left;
+}
+
+.t-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #2f6bff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.t-top h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.t-top span {
+  font-size: 13px;
+  color: #666;
+}
+
+.t-card p {
+  color: #333;
+  line-height: 1.6;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .testimonials-page {
+    padding: 25px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-page h1 {
+    font-size: 28px;
+  }
+}
+.faq-page {
+  padding: 60px;
+}
+
+.faq-box {
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-box h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.faq-list {
+  margin-top: 20px;
+  display: grid;
+  gap: 14px;
+}
+
+.faq-item {
+  background: #f4f7fb;
+  padding: 18px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.faq-item summary {
+  font-weight: bold;
+  color: #2f6bff;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item p {
+  margin-top: 10px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .faq-page {
+    padding: 25px;
+  }
+
+  .faq-box {
+    padding: 25px;
+  }
+
+  .faq-box h1 {
+    font-size: 28px;
+  }
+}
+.btn{
+  text-decoration: none;
+  display: inline-block;
+}
+.offer-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 18px 0 25px 0;
+}
+
+.tab {
+  border: none;
+  background: white;
+  padding: 10px 14px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tab.active {
+  background: #2f6bff;
+  color: white;
+}
+
+.subtext {
+  color: #555;
+  margin-top: 8px;
+}
+.how-page{
+  padding: 60px;
+}
+
+.how-box{
+  background: white;
+  padding: 40px;
+  border-radius: 14px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.how-steps{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.how-card{
+  background: #f4f7fb;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.how-card h3{
+  color: #2f6bff;
+  margin-bottom: 8px;
+}
+
+/* responsive */
+@media (max-width:768px){
+  .how-page{ padding: 25px; }
+  .how-box{ padding: 25px; }
+  .how-steps{ grid-template-columns: 1fr; }
+}
+
+.contact-section{
+  background: #2a5ecb;
+  color: white;
+  padding: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-left: 50px;
+}
+
+.contact-left{
+  width: 50%;
+}
+
+.contact-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon-circle{
+  width: 60px;
+  height: 60px;
+  background: white;
+  color: #2a5ecb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.contact-item h3{
+  margin: 0;
+  font-size: 22px;
+}
+
+.contact-item p{
+  margin: 4px 0 0 0;
+  color: #cfe0ff;
+  font-weight: 600;
+}
+
+/* mobile */
+@media (max-width:768px){
+  .contact-section{
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .contact-left,
+  .contact-right{
+    width: 100%;
+  }
+}
+
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.hero-login{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-card{
+  width: 100%;
+  max-width: 380px;
+  background: rgba(0, 0, 0, 0.445);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  padding: 22px;
+  backdrop-filter: blur(8px);
+}
+
+.login-card h2{
+  margin-bottom: 6px;
+}
+
+.login-sub{
+  color: #bfc7d6;
+  margin-bottom: 16px;
+}
+
+.login-card label{
+  display: block;
+  margin: 10px 0 6px;
+  color: #d6deee;
+  font-weight: 600;
+}
+
+.login-card input{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: rgba(0,0,0,0.25);
+  color: white;
+  outline: none;
+}
+
+.login-btn{
+  width: 100%;
+  margin-top: 14px;
+}
+
+.login-links{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.login-links a{
+  color: #9fb7ff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-links a:hover{
+  text-decoration: underline;
+}
+
+/* mobile */
+@media (max-width:768px){
+  .hero{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-login{
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
+.register-wrap{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #f4f7fb;
+}
+
+.register-card{
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+}
+
+.register-card h1{
+  margin-bottom: 6px;
+}
+
+.register-card p{
+  color: #555;
+  margin-bottom: 18px;
+}
+
+#registerForm input{
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+.back-login{
+  margin-top: 14px;
+  text-align: center;
+}
+
+.back-login a{
+  color: #2f6bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* LOGIN / REGISTER / FORGOT FORM SPACING */
+.login-card,
+.register-card{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-card form,
+#registerForm,
+#forgotForm{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login-card input,
+#registerForm input,
+#forgotForm input{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background: rgba(0,0,0,0.25);
+  color: white;
+  outline: none;
+}
+
+.register-card input,
+#registerForm input,
+#forgotForm input{
+  background: white;
+  color: #111;
+  border: 1px solid #ddd;
+}
+
+.login-card label{
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+.login-btn{
+  margin-top: 10px;
+}
+
+.login-links{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.login-links a{
+  font-size: 14px;
+}
+
+/* APPLY PAGE */
+#applyForm input{
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  margin-top: 8px;
+}
+
+#applyForm button{
+  width: 100%;
+  margin-top: 10px;
+}
+
+#applyForm input:focus{
+  border-color: #2f6bff;
+}
+
