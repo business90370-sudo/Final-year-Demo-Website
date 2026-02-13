@@ -1,6 +1,7 @@
 console.log("script.js loaded ✅");
 
 // Use Render backend for all deployments
+// Use Render backend for all deployments
 const API_BASE = "https://final-year-demo-website-2.onrender.com";
 
 // Hide login card if already logged in (until tab is closed)
