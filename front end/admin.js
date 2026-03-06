@@ -1,11 +1,21 @@
 // Use Render backend for all deployments
-const BACKEND_URL = "https://final-year-group-project-q9mg.onrender.com";
+const API_BASE = "https://final-year-demo-website-2.onrender.com";
+
+// Check if user is logged in and is admin
+const isLoggedIn = sessionStorage.getItem("loggedIn") === "yes";
+const isAdmin = sessionStorage.getItem("isAdmin") === "yes";
+
+if (!isLoggedIn || !isAdmin) {
+  alert("Access denied. Admin login required.");
+  window.location.href = "index.html";
+}
+
 const email = sessionStorage.getItem("userEmail");
 const msg = document.getElementById("adminMsg");
 
 async function loadUsers() {
   try {
-    const res = await fetch(`${BACKEND_URL}/admin/users`, {
+    const res = await fetch(`${API_BASE}/admin/users`, {
       headers: { "x-admin-email": email }
     });
 
